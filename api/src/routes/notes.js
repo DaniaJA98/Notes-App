@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { route } = require('./users');
+const { router } = require('./users');
 const router = Router();
 
 const { getNotes, createNote, getNote, updateNote, deleteNote } = require('../controllers/notes.controller');
@@ -15,7 +15,6 @@ router.route('/:id')
     .delete(deleteNote)
 
 
-// Modifica solo un elemento
-// .patch()
+
 
 module.exports = router;
